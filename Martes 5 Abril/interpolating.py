@@ -17,8 +17,8 @@ print("Hello {0} {1} is a {2} of {3} years old".format(
 ))
 
 name = input("Ingresa tu nombre: ")
-
-age = int(input("Ingresa tu edad "))
+age = input("Ingresa tu edad ")
+age = int(age)
 print(type(age))
 message = f"Hola {name} {age}"
 print(message)
