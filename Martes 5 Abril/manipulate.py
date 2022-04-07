@@ -25,8 +25,8 @@ print("foo goo moo".count("oo"))
 print("foobar".endswith("ar"))
 print("foobar".startswith("foo"))
 
-lista = ["a", "b", "c", "d"]
-string_lista = "AA".join(lista)
+lista = ["z", "d", "c", "d"]
+string_lista = "  ".join(lista)
 print(string_lista)
-lista_string = string_lista.split("AA")
+lista_string = string_lista.split("  ")
 print(lista_string)
