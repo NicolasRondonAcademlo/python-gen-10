@@ -14,3 +14,5 @@ while val < 1000:
     print(val)
 
 print(power)
+
+
