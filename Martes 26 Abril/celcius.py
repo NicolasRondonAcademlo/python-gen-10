@@ -26,7 +26,8 @@ class Celsius:
     def get_temperature(self) -> float:
         return self.__temperature
 
-
+    def create_argument(self):
+        self.nuevo = 111
 
 #Instancia  - Destruye
 human = Celsius(37)
