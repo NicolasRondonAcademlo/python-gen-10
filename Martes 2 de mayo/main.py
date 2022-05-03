@@ -1,3 +1,6 @@
+from collections import namedtuple
+
+
 lista = [3,8,5,9,7,5,6, 3, 8, 9]
 lista = list(set(lista))
 print(lista)
@@ -34,13 +37,23 @@ for i in lista:
     else:
         nuevo[i[0]] = i[1]
 
-print(nuevo)
+#print(nuevo)
 
 old_lista_dict = [
-
   {"name": "Andres", "puntos": 45},
   {"name": "Maria", "puntos": 9995},
   {"name": "Maria", "puntos": 1},
 {"name": "Nico", "puntos": 8895},
   {"name": "Nico", "puntos": 7895},
 ]
+
+# from itertools import count, OrderedDict
+# sortde, 
+nuevo_2 = {}
+
+for old_item in old_lista_dict:
+    if old_item["name"] in nuevo_2.keys():
+        nuevo_2[old_item["name"]] += old_item["puntos"]
+    else:
+        nuevo_2[old_item["name"]] = old_item["puntos"]
+print(nuevo_2)
